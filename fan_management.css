@@ -1,0 +1,623 @@
+img,
+input{
+    vertical-align: middle;
+    border: none;
+    outline: 0;
+}
+
+
+i,em,dfn,span{
+    display: inline-block;
+    font-style: normal;
+}
+
+i{
+    color: inherit;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none
+}
+
+.clr:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fl{float: left;}
+.fr{float: right;}
+.hide{display: none;}
+.show{display: block;}
+.comw{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.bread{
+    width: 1200px;
+    height: 20px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/location.png) 0 0 no-repeat;
+    padding-left: 25px;
+    margin: 30px auto 0 auto;
+    box-sizing: border-box;
+    font: 14px microsoft yahei;
+    color: #555;
+}
+
+.bread em{
+    margin: 0 10px;
+}
+
+.wrapper{
+    width: 1200px;
+    padding: 20px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    font: 14px microsoft yahei;
+    position: relative;
+}
+
+.wrapper .search{
+    border-bottom: none;
+    padding: 5px 0 12px 0
+}
+
+.wrapper .search button{
+    width: 58px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #FF9900;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.action{
+    width: 97px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #4BAF4F;
+    color: #fff;
+    border-radius: 3px;
+    /*float: right;*/
+    position: absolute;
+    right: 20px;
+    top: 24px;
+}
+
+.content{
+    height: 575px;
+    border: 1px solid #EFEFEF;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* .content *{
+    box-sizing: border-box;
+} */
+
+.content > .fl,
+.content > .fr{
+    box-sizing: border-box;
+}
+
+.content > .fl{
+    width: 912px;
+    height: 100%;
+    border-right: 1px solid #EFEFEF;
+}
+
+
+.content .fl .title{
+    height: 43px;
+    line-height: 43px;
+    padding-left: 20px;
+}
+
+.check{
+    width: 15px;
+    height: 15px;
+    /* line-height: 10px; */
+    /*background-color: #fff;*/
+    border: 1px solid #ddd;
+    /* margin: 1px 10px 0 0; */
+    margin-top: 10px;
+    vertical-align: -4px;
+}
+
+.check.checked{
+    background: #fff url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/checked.png) 3px 3px no-repeat;
+}
+
+.check_all{
+    /*width: 43px;*/
+    height: 43px;
+    line-height: 43px;
+    margin: 0px 20px 0 10px;
+    /*background-color: red;*/
+}
+
+.legend{
+    height: 43px;
+    /* line-height: 43px; */
+    background-color: #f4f5f9;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.handle{
+    padding: 6px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #EFEFEF;
+    cursor: pointer;
+}
+
+
+
+.item{
+    /*height: 90px;*/
+    /*line-height: 90px;*/
+    border-bottom: 1px solid #EFEFEF;
+    padding: 20px;
+}
+
+.item .left img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/*.item .left img:hover .item .left .description{
+    display: block;
+}*/
+
+.item .left .student{
+    display: inline-block;
+}
+
+.item .left .student .student_desc{
+    max-width: 530px;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.item .left{
+    position: relative;
+}
+
+.student_desc .desc{
+    padding: 3px 10px;
+    background-color: #F3F5F9;
+    border-radius: 3px;
+    margin: 0 8px 6px 0;
+}
+
+.student_desc .descript{
+    width: 415px;
+    /*height: 210px;*/
+    background-color: #fff;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    position: absolute;
+    left: -40px;
+    top: 40px;
+    z-index: 1;
+    box-sizing: border-box;
+    display: none
+}
+
+.description{
+    position: absolute;
+    width: 612px;
+    height: 216px; 
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    position: absolute;
+    left: 146px;
+    top: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    display: none;
+}
+
+.description_img{
+    width: 185px;
+    height: 193px;
+    margin-right: 15px;
+}
+
+.item .left .description_img img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+
+.description_info{
+    width: 390px;
+}
+
+.description_student_name .fl,
+.description_student_name .fr{
+    vertical-align: middle;
+}
+
+.description_student_name .student_name{
+    line-height: 2em;
+    font-size: 16px;
+    color: #555;
+}
+
+.description_student_name i{
+    width: 24px;
+    height: 18px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/male.png) 0 0 no-repeat;
+    margin: 7px 0 0 6px;
+}
+
+.description_info dl{
+    line-height: 33px;
+}
+
+.description_info dt,
+.description_info dd{
+    display: inline-block;
+}
+
+.description_info dt,
+.description_info .concern{
+    color: #999;
+}
+
+.description_info dd{
+    margin-left: 20px;
+}
+
+.description_info .tag{
+    color: #2192df;
+}
+
+.description_info .concern{
+    margin-top: 6px;
+}
+
+.tip_layer .sure{
+    margin-left: 20px;
+}
+
+/*.student_desc:hover .descript{
+    display: block;
+}*/
+
+.student .student_name{
+    font-size: 16px;
+}
+
+.to_top{
+    width: 16px;
+    height: 11px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/to_top.png) 0 0 no-repeat;
+    position: absolute;
+    left: 60px;
+    top: -11px;
+}
+
+.descript .choose_area{
+    padding: 25px;
+}
+
+.choose_area .choice{
+    margin: 0 47px 15px 0;
+}
+
+.choose_area .check{
+    margin-right: 10px;
+}
+
+.descript .add_tag{
+    color: #14B6FF;
+    cursor: pointer;
+}
+
+.confirm{
+    height: 69px;
+    line-height: 69px;
+    text-align: center;
+    /*background-color: red*/
+    border-top: 1px solid #EFEFEF;
+    cursor: pointer;
+}
+
+.wrapper .confirm span{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+}
+
+.turn{
+    width: 25px;
+    height: 20px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/turn.png) 0 0 no-repeat;
+    vertical-align: middle;
+    /*margin-right: 15px;*/
+    display: none;
+}
+
+.turn.show{
+    display: inline-block;
+}
+
+.wrapper .sure{
+    border: 1px solid #4BAF4F;
+    background-color: #4BAF4F;
+    color: #fff;
+    /*margin-left: 20px;*/
+}
+
+.relevance_btn.sure{
+    margin-left: 10px;
+}
+
+.item .right .handle{
+    display: inline-block;
+    position: relative;
+}
+
+
+.relevance_list_wrap{
+    width: 362px;
+    /*height: 177px;*/
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    left: -130px;
+    top: 50px;
+    z-index: 1;
+
+    display: none;
+}
+
+.relevance_list_wrap.show{
+    display: block;
+}
+
+.relevance_list_wrap .to_top{
+    left: 170px
+}
+
+.relevance_list_wrap .search{
+    padding: 0;
+    display: inline-block;
+}
+
+.relevance_list_wrap .search input{
+    width: 190px;
+}
+
+.relevance_list_wrap .search button{
+    background-color: #14B6FF;
+    height: 30px;
+    line-height: 30px;
+}
+
+.relevance_list_wrap .handle{
+    padding: 0;
+    margin: 0 0 0 9px;
+    width: 56px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    color: #555;
+}
+
+.relevance_list_wrap table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #EFEFEF;
+    margin-top: 10px;
+    color: #555;
+}
+
+
+.relevance_list_wrap table tbody td{
+    border-bottom: none;
+    padding: 0 20px;
+}
+
+.relevance_list_wrap table tbody tr:nth-child(even){
+     background-color: #f4f5f9
+}
+
+.relevance_list_wrap table tbody td:nth-child(1){
+    text-align: left;
+}
+
+
+
+.remark_wrap{
+    width: 292px;
+    /*height: 160px;*/
+    background-color: #fff;
+    padding: 20px 20px 0px 20px;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    left: -18px;
+    top: 50px;
+    z-index: 1;
+    display: none;
+}
+
+.remark_wrap .to_top{
+    position: absolute;
+}
+
+
+.remark_title{
+    color: #999;
+}
+
+.input_wrap{
+    position: relative;
+    margin-top: 10px;
+}
+
+.input_wrap input{
+    border: 1px solid #EFEFEF;
+    width: 100%;
+    color: #555;
+    font-family: microsoft yahei;
+}
+
+.input_wrap .restrict{
+    color: #999;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.remark_wrap .confirm{
+    border-top: none;
+}
+
+.remark_wrap .cancel{
+    color: #555;
+}
+
+
+
+
+.left .check,
+.left .img,
+.left .student{
+    vertical-align: middle;
+}
+
+.left .check{
+    margin-top: 0;
+}
+
+.right{
+    margin-top: 15px;
+}
+
+.content > .fr{
+    width: 246px;
+    /*background: red*/
+    margin-top: -1px;
+}
+
+.content .fr .first_level .list_tit{
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    text-indent: 20px;
+    background-color: #f4f5f9;
+    border-bottom: 1px solid #EFEFEF;
+    border-top: 1px solid #EFEFEF;
+    cursor: pointer;
+    color: #555;
+}
+
+
+
+.content .fr .first_level .second_level li{
+    height: 43px;
+    line-height: 43px;
+    text-indent: 50px;
+    cursor: pointer;
+
+    /*background-color: #f4f5f9;*/
+}
+
+.content .fr li em{
+    text-indent: 0;
+    color: #a9a9a9
+}
+
+.mask_layer{
+    width: 100%;
+    height: 100%;
+    font: 16px/1 microsoft yahei;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    display: none;
+}
+
+.pop_up{
+    width: 341px;
+    height: 180px;
+    color: #555;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.mask_layer .confirm{
+    height: 50px;
+    line-height: 50px;
+}
+
+.pop_up .confirm_info{
+    margin: 24px;
+    line-height: 1.7em;
+        width: 293px;
+    height: 81px;
+}
+
+.mask_layer .confirm span.cancel,
+.mask_layer .confirm span.sure{
+    width: 50%;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.mask_layer .confirm span.cancel{
+    color: #999;
+}
+
+.mask_layer span.sure{
+    border-left: 1px solid #EFEFEF;
+    color: #14B6FF;
+}
