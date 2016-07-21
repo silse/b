@@ -14,17 +14,17 @@ $('.nav-title li span').click(function() {
 
 require.config({
     paths: {
-        echarts: 'https://echarts.baidu.com/build/dist'
+        echarts: 'http://echarts.baidu.com/build/dist'
     }
 });
 
 
 require(
     [
-        'echarts',
-        'echarts/chart/bar',
-        'echarts/chart/pie',
-        'echarts/chart/line'
+        // 'echarts',
+        'bar',
+        'pie',
+        'line'
     ],
 
     function(ec) {
