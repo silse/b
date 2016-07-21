@@ -1,0 +1,660 @@
+img,
+input{
+    vertical-align: middle;
+    border: none;
+    outline: 0;
+}
+
+
+i,em,dfn,span{
+    display: inline-block;
+    font-style: normal;
+}
+
+i{
+    color: inherit;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none
+}
+
+.clr:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fl{float: left;}
+.fr{float: right;}
+.hide{display: none;}
+.show{display: block;}
+
+
+.comw{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bread{
+    width: 1200px;
+    height: 20px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/location.png) 0 0 no-repeat;
+    padding-left: 25px;
+    margin: 30px auto 20px auto;
+    box-sizing: border-box;
+    font: 14px microsoft yahei;
+    color: #555;
+}
+
+.bread em{
+    margin: 0 10px;
+}
+
+.wrapper{
+    width: 1200px;
+    height: 676px;
+    /*padding: 20px;*/
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    font: 14px microsoft yahei;
+    position: relative;
+    /*border-radius: 3px;*/
+}
+
+
+.chat_nav{
+    width: 60px;
+    height: 100%;
+    background-color: #2F3139;
+}
+
+.chat_nav li{
+    width: 60px;
+    height: 70px;
+    color: #fff;
+    /*background: #ccc;*/
+    /*border: 1px solid #000;*/
+    position: relative;
+}
+
+.chat_nav li a{
+    display: inline-block;
+    background-color: red;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/chat_nav_bg.png) no-repeat;
+    /*margin: 22px 0 0 13px;*/
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.chat_nav a.first{
+    width: 34px;
+    height: 25px;
+    background-position: 0 0;
+}
+
+.chat_nav a.second{
+    width: 28px;
+    height: 27px;
+    background-position: -3px -26px;
+}
+
+.chat_nav a.third{
+    width: 29px;
+    height: 25px;
+    background-position: -2px -54px;
+}
+
+.chat_nav li.active,
+.chat_nav li:hover{
+    background-color: #17C0FF;
+}
+
+.chat_nav li.active a.first,
+.chat_nav li:hover a.first{
+    background-position: -35px 0px;
+}
+
+.chat_nav li.active a.second,
+.chat_nav li:hover a.second{
+    background-position: -37px -26px;
+}
+
+.chat_nav li.active a.third,
+.chat_nav li:hover a.third{
+    background-position: -37px -54px;
+}
+
+
+.user_list_wrap{
+    width: 300px;
+    height: 100%;
+    /*background-color: red;*/
+    /*padding: 14px 20px;*/
+    border-right: 1px solid #eaeaea;
+    box-sizing: border-box;
+}
+
+.user_list{
+    /*margin: 10px 0 0 16px;*/
+}
+
+.user_search{
+    width: 90%;
+    height: 36px;
+    line-height: 36px;
+    /* padding-left: 30px; */
+    border: 1px solid #f7f7f7;
+    border-radius: 25px;
+    position: relative;
+    margin: 10px 0 0 12px;
+}
+
+.user_search input{
+    display: block;
+    width: 100%;
+    text-indent: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: microsoft yahei;
+}
+
+.communication_search{
+    width: 17px;
+    height: 19px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/communication_search.png) 0 0 no-repeat;
+    position: absolute;
+    right: 18px;
+    top: 8px;
+    cursor: pointer;
+}
+
+
+.user_list .chats{
+    padding: 15px 20px;
+    /*border: 1px solid #efefef;*/
+    border-radius: 3px;
+}
+
+.chats .chats_img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.chats .chats_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chats .chats_img,
+.chats .chats_info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.chats_info > .clr{
+    width: 184px;
+}
+
+.chats_info .student_name {
+    float: left;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.chats_info .time {
+    float: right;
+}
+
+.chats_info p,
+.chats_info .time{
+    color: #999;
+}
+
+.main_container{
+    width: 840px;
+    height: 100%;
+    /*background-color: red*/
+}
+
+.main_container > .student_name{
+    /*height: 56px;*/
+    /*line-height: 56px;*/
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    border-bottom: 1px solid #f7f7f7;
+    position: relative;
+}
+
+.main_container .student_name .change_target{
+    padding: 15px 0; 
+    background-color: #FCFCFC;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    z-index: 100;
+    font-size: 14px;
+    /* line-height: 0; */
+}
+
+
+
+.change_target .present{
+    width: 86px;
+    margin: 0 78px 0 40px;
+    color: #FF2732;
+    text-align: center;
+}
+
+.present .present_text{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.present img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.present .present_name{
+    margin-top: 15px;
+}
+
+.main_container .student_name .arrow_up{
+    width: 13px;
+    height: 8px;
+    background: url(arrow_up.png) 0 0 no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+ul.userchat{
+    padding: 0 30px;
+    /*height: 436px;*/
+    /*overflow: auto;*/
+}
+
+ul.userchat li.timer{
+    color: #999;
+    text-align: center;
+    font-size: 14px;
+    margin: 15px 0 20px 0;
+}
+
+ul.userchat li.me img,
+ul.userchat li.you img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+ul.userchat li.me,
+ul.userchat li.you{
+    margin: 10px 0;
+}
+
+ul.userchat li.you img{
+    float: left;
+}
+
+ul.userchat li.me img{
+    float: right;
+}
+
+ul.userchat li.me .msg,
+ul.userchat li.you .msg{
+    /* width: 284px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center; */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3BA501;
+    border-radius: 5px;
+    position: relative;
+}
+
+ul.userchat li.you .msg{
+    margin: 6px 0 0 26px;
+    color: #fff;
+    float: left;
+}
+
+ul.userchat li.me .msg{
+    margin: 6px 26px 0 0;
+    background-color: #ededed;
+    color: #555;
+    float: right;
+}
+
+ul.userchat li.me .msg .arrow,
+ul.userchat li.you .msg .arrow{
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+    position: absolute;
+}
+
+ul.userchat li.you .msg .arrow{
+    border-right: 10px solid #3BA501;
+    left: -16px;
+    top: 14px;
+}
+
+ul.userchat li.me .msg .arrow{
+    border-left: 10px solid #ededed;
+    position: absolute;
+    right: -10px;
+    top: 14px;
+}
+
+.edit_tools{
+    height: 36px;
+    line-height: 36px;
+    padding-left: 20px;
+    /*background-color: #ccc;*/
+    border-top: 1px solid #f7f7f7;
+}
+
+.edit_tools .tools{
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/chat_edit.png) no-repeat;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.tools.second{
+    background-position: -18px 0;
+}
+
+.tools.third{
+    background-position: -35px 0;
+}
+
+.edit_area textarea{
+    width: 800px;
+    height: 90px;
+    color: #555;
+    border: none;
+    padding-top: 3px;
+    margin-left: 18px;
+    box-sizing: border-box;
+}
+
+/*.edit_area textarea:focus{
+    border: 1px solid red;
+}*/
+
+.send_text{
+    /*width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;*/
+    padding: 5px 10px;
+    background-color: #43B547;
+    border-radius: 3px;
+    color: #fff;
+    margin: 10px 20px;
+}
+
+
+
+
+
+
+.menu-list {
+    width: 100%;
+    /*height: 700px;*/
+    /*overflow-y: auto;*/
+    /*background: #2F4050;*/
+    /*float: left;*/
+}
+
+
+/*.first-level-item{
+    background-color: #F3F5F9;
+}*/
+
+.first-level-item{
+    margin: 10px 0;
+}
+
+.first-level-item a{
+    color: #555;
+    display: block;
+    text-decoration: none;
+    /*padding: 15px 0 15px 22px;*/
+}
+
+.first-level-item .first-level-item-text{
+    height: 43px;
+    line-height: 43px;
+    font-size: 16px;
+    background-color: #F3F5F9;
+    padding-left: 20px;
+    border-top: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.second-level-list a{
+    padding: 10px 0;
+    padding-left: 50px;
+}
+
+.third-level-list a{
+    padding-left: 70px;
+}
+
+.fourth-level-list a{
+    padding-left: 90px;
+}
+
+
+.first-level-item a > .arrow{
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/list_arrow.png) no-repeat;
+    margin-right: 10px;
+}
+
+
+.first-level-item a > .arrow.arrow-down{
+    width: 10px;
+    height: 6px;
+    vertical-align: 2px;
+}
+
+.first-level-item a > .arrow.arrow-left{
+    width: 10px;
+    height: 12px;
+    vertical-align: -1px;
+    background-position: 0 -6px;
+}
+
+
+.sub-list{
+    /*background-color: #283847;*/
+    font-size: 14px;
+    display: none;
+}
+
+
+
+.second-level-list .second-level-item-text{
+    color: #999;
+}
+
+.student-info-item img,
+.third-level-list img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.non_student_fans img{
+    margin-left: 20px;
+}
+
+.student-info-item .name,
+.third-level-list .name{
+    margin-left: 10px;
+    color: #555;
+}
+
+.student-info-item,
+.third-level-list li{
+    /*padding: 10px 0;*/
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.student-info-item:hover,
+.third-level-list li:hover,
+.student-info-item.active,
+.third-level-list li.active{
+    background-color: #f2faff;
+}
+
+.item-helper{
+    width: 15px;
+    height: 15px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/item_helper.png) 0 0 no-repeat;
+    margin-left: 10px;
+    vertical-align: -1px;
+    position: relative;
+}
+
+.item-helper:hover .helper-tip{
+    /*visibility: visible;*/
+    display: block;
+}
+
+.helper-tip{
+    width: 236px;
+    height: 102px;
+    line-height: 1.8em;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #f6dd58;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -122px;
+    left: -100px;
+
+    /*visibility: hidden;*/
+    display: none;
+}
+
+.oblique_angle{
+    width: 22px;
+    height: 18px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/oblique_angle.png) 0 0 no-repeat;
+    position: absolute;
+    top: 100%;
+    left: 45%;
+}
+
+
+.preview{
+    text-align: center;
+}
+
+/*.preview *{
+    display: block;
+}*/
+
+
+.preview img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 66px 0 20px 0;
+}
+
+.preview .preview_name{
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.preview .preview_role{
+    margin-bottom: 76px;
+}
+
+.preview .send_text,
+.patriarchal_role .send_text{
+    width: 77px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.patriarchal_info_text{
+    font-weight: bold;
+    padding-left: 40px;
+    margin: 126px 0 20px 0;
+    color: #555;
+}
+
+
+.patriarchal_info_wrap{
+    border: 1px solid #EFEFEF;
+    margin: 20px;
+    padding: 20px 0;
+    color: #555;
+}
+
+.patriarchal_info_item{
+    width: 26%;
+    margin-left: 37.5px;
+}
+
+.patriarchal_info_item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.patriarchal_info_item,
+.patriarchal_info_item img,
+.patriarchal_info_item .patriarchal_role{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.patriarchal_name{
+
+}
+
+.patriarchal_role .send_text{
+    margin-top: 8px;
+}
+
+.mt_70{
+    margin-top: 70px;
+    transition: .3s
+}
