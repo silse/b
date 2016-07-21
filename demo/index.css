@@ -1,0 +1,514 @@
+a{
+    text-decoration: none;
+}
+
+img,
+input{
+    border: none;
+    outline: 0;
+}
+
+i,em,dfn,span{
+    display: inline-block;
+	font-style: normal;
+}
+
+.comw{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clr:after{
+	content: "";
+	display: table;
+    clear: both;
+}
+
+.clr{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+.hide{display: none;}
+.show{display: block;}
+.rel{position: relative;}
+
+
+
+.wrapper{
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font: 14px microsoft yahei;
+}
+
+.nav-title{
+    border-bottom: 1px solid #F7F7F7;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #5D5D5D;
+    /*position: relative;*/
+}
+
+
+
+.nav-title li{
+    display: inline-block;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.nav-title li + li i{
+    padding-right: 20px;
+    color: #E7E7E7;
+}
+
+.nav-title li span{
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.nav-title li span:hover,
+.nav-title li span.active{
+    border-bottom: 1px solid #14B6FF;
+    color: #14B6FF;
+}
+
+
+.recent-detail-list{
+    margin-right: -20px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.recent-detail-list li.list-layer{
+    width: 1160px;
+    margin: auto;
+    background: rgba(0,0,0,.5) url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/loading.gif) center no-repeat;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.recent-detail-list li{
+    float: left;
+    width: 275px;
+    height: 125px;
+    background: #ccc;
+    margin-right: 20px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.recent-detail-list li.first{
+    background-color: #25A589;
+}
+.recent-detail-list li.second{
+    background-color: #5B6BBF;
+}
+.recent-detail-list li.third{
+    background-color: #29B5F5;
+}
+.recent-detail-list li.fourth{
+    background-color: #EB3F79;
+    overflow: hidden;
+}
+
+.newly{
+    margin-top: 28px;
+}
+
+.newly p{
+    font-size: 14px;
+    margin: 0 0 12px 20px;
+}
+
+.newly p em,
+.recent-detail-list .info em {
+    font-size: 20px;
+}
+
+.recent-detail-list li.first .charts{
+    width: 74px;
+    height: 100%;
+    /*background: #ccc;*/
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#first_detail_bar{
+    width: 236px;
+    height: 246px;
+    position: absolute;
+    left: -81px;
+    top: -61px;
+}
+
+
+.second dl,
+.recent-detail-list .info{
+    padding: 20px 0 0 20px;
+}
+
+.second dt,
+.recent-detail-list .info dfn{
+    font-size: 16px;
+}
+
+.second dd{
+    margin-top: 5px;
+}
+
+.second dd em{
+    font-size: 20px;
+}
+
+.second .charts{
+    width: 120px;
+    height: 100%;
+    /*background: #ccc*/
+}
+
+.recent-detail-list .info dfn{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#second_detail_pie{
+    width: 120px;
+    height: 100%;
+    /*background: red;*/
+    /*margin: 16px 0px 0 40px;*/
+}
+
+.third .charts{
+    height: 48px;
+    /*background: #ccc;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.fourth .charts{
+/*    height: 60px;
+    position: relative;*/
+}
+
+#third_detail_line{
+    width: 437px;
+    height: 185px;
+    /*background: red;*/
+    position: absolute;
+    left: -81px;
+    top: -55px;
+}
+
+#fourth_detail_line_area{
+    width: 437px;
+    height: 185px;
+    margin: -77px 0 0 -80px;
+    background: rgba(0,0,0,.3);
+}
+
+.title{
+    font-size: 16px;
+    color: #5D5D5D;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F7F7F7;
+    margin-bottom: 20px;
+}
+
+
+
+
+.classes{
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F7F7F7;
+    position: relative;
+    height: 115px;
+    overflow: hidden;
+}
+
+.a{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 1px solid #fff;
+}
+
+.all_classes{
+    height: auto;
+    overflow: visible;
+}
+
+.classes .item{
+    width: 33.33%;
+    height: 100px;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 40px;
+    border-left: 1px solid #F7F7F7;
+    margin-bottom: 30px;
+}
+
+/* .classes .item + .item{
+    border-left: 1px solid #F7F7F7;
+} */
+
+
+
+.classes .item .course_scheduling{
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-right: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    padding-top: 45px;
+    box-sizing: border-box;
+}
+
+.red{
+    border: 1px solid #FF5256;
+    color: #FF5256;
+}
+
+.green{
+    border: 1px solid #05BE72;
+    color: #05BE72;
+}
+
+.blue{
+    border: 1px solid #4DB6F6;
+    color: #4DB6F6;
+}
+
+.classes .item .course_scheduling.first{
+    border: 1px solid #FF5256;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/shuiping1.png) -9px 11px no-repeat;
+}
+
+.classes .item .course_scheduling.second{
+    border: 1px solid #05BE72;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/shuiping2.png) -9px 11px no-repeat;
+}
+
+.classes .item .course_scheduling.third{
+    border: 1px solid #4DB6F6;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/shuiping3.png) -9px 11px no-repeat;
+}
+
+.course_scheduling b em{
+    font-size: 20px
+}
+
+.classes .item h3{
+    margin: 12px 0 10px 0;
+    color: #353535;
+    margin: 12px 0 10px 0;
+    color: #353535;
+    font: bold 16px microsoft yahei;
+}
+
+.classes .item span{
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.classes .item .class_info{
+    margin-right: 60px;
+}
+
+.classes .item .class_info span{
+    color: #656565
+}
+
+.show_all_classes{
+    display: block;
+    outline: none;
+    width: 138px;
+    height: 35px;
+    text-align: center;
+    font: 16px microsoft yahei;
+    background-color: transparent;
+    color: #777;
+    border: 1px solid #E7E7E7;
+    border-radius: 20px;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+}
+
+.evaluate > div{
+    width: 590px;
+    height: 418px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+
+.selector{
+    width: 130px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 0;
+}
+
+.selector i.date{
+    width: 20px;
+    height: 20px;
+    background-position: -112px 0;
+    margin: 11px 0 0 10px;
+}
+
+.cut_off{
+    margin-left: 10px;
+    color: #F0F0F0;
+}
+
+.selected{
+    margin-left: 10px;
+    vertical-align: top;
+    font-size: 14px;
+    // border-left: 1px solid red;
+    // padding-left: 20px;
+    color: #777777;
+}
+
+.show_list{
+    background-position: -50px 2px;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+
+.select ul{
+    width: 100%;
+    background: #fff;
+    text-indent: 10px;
+    font-size: 14px;
+    border: 1px solid #F0F0F0;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    text-indent: 60px;
+}
+
+.select ul li:hover{
+    background-color: #eee
+}
+
+.select .option + .option{
+    border-top: 1px solid #F0F0F0;
+}
+
+.reviewed{
+    color: #878787;
+    margin-bottom: 0px;
+    position: relative;
+    top: -40px;
+}
+
+.reviewed_list{
+    margin-bottom: 0;
+}
+
+
+
+
+.index_table_wrap table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.index_table_wrap table th{
+    background: #fff; 
+    font-weight: normal;
+    color: #979797;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.index_table_wrap table .tiny_star{
+    width: 19px;
+    height: 18px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/tiny_star.png) 0 0 no-repeat;
+}
+
+.index_table_wrap table .impression_label{
+    font-size: 14px;
+    border-radius: 10px;
+    line-height: 1.6em;
+    padding: 0px 10px;
+}
+
+.index_table_wrap table .impression_label + .impression_label{
+    margin-left: 3px;
+}
+
+
+.index_table_wrap table td:last-child{
+    width: 382px;
+    line-height: 1.71em;
+    text-align: left;
+}
+
+.index_table_wrap table td:first-child,
+.index_table_wrap table td:last-child{
+    color: #656565;
+}
+
+
+.index_table_wrap table tbody td {
+    padding: 6px 23px;
+    border-bottom: none;
+    border-top: 1px solid #EEEEEE;
+    color: #979797;
+}
+
+.index_table_wrap table thead tr{
+    color: #979797;
+}
+
+.index_table_wrap tr:hover{
+    /*background-color: #ccc;*/
+    /*box-shadow: 10px 10px 5px #888888;*/
+}
+
+
+.slide_down{
+    width: 14px;
+    height: 12px;
+    background: url(http://img.peixun.vko.cn/platform/cloud/images/studentPlatform/slide_down.png) 0 0 no-repeat;
+    margin-left: 10px;
+}
+
+#line,
+#bar{
+    width: 680px;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    left: -50px;
+    top: -40px;
+}
+
+.comw.evaluate .title {
+    font: 16px microsoft yahei;
+}
+
