@@ -14,7 +14,7 @@ $('.nav-title li span').click(function() {
 
 require.config({
     paths: {
-        echarts: 'http://echarts.baidu.com/build/dist'
+        echarts: 'https://echarts.baidu.com/build/dist'
     }
 });
 
